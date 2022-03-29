@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap");
+
+body {
+	background: #0f2027;
+	background: -webkit-linear-gradient(to right, #2c5364, #203a43, #0f2027);
+	background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+
+	font-family: "Oswald", sans-serif;
+}
+
+header {
+	background-image: url("https://images3.alphacoders.com/233/thumb-1920-233229.jpg");
+	height: 100px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 10px;
+	border: 1px solid #778899;
+}
+
+.ripple-background {
+	position: absolute;
+	z-index: -1;
+	left: 10px;
+	bottom: 0px;
+}
+
+.container {
+	color: #fffff0;
+	background: #1b2b346b;
+	margin: 25px;
+	border-radius: 10px;
+	box-shadow: 6px 6px 6px #0e1d2f;
+	padding: 32px 16px;
+}
+
+.profile {
+	display: flex;
+	align-items: center;
+	color: whitesmoke;
+}
+
+.profile-pic {
+	max-height: 160px;
+	border-radius: 100%;
+	border: 2px solid #faf0e6;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 6px 6px 6px #0e1d2f;
+}
+
+.title {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.title h1 {
+	font-weight: 700;
+	font-size: 36px;
+	color: #a9a9a9;
+}
+
+.title h3 {
+	font-weight: 400;
+	font-size: 24px;
+	transform: translatey(-32px);
+	color: #fff5ee;
+}
+
+.projects {
+	font-size: 20px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	background-color: #a9a9a9;
+	padding: 5px;
+	margin: 5px 1px;
+	border: 1px solid #778899;
+	box-shadow: 2px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+.links-fonts {
+	font-size: 20px;
+	font-family: "Oswald";
+}
+
+.logo-linkedin {
+	width: 35px;
+	bottom: 20px;
+	left: 10px;
+}
+
+.logo-github {
+	fill: black;
+	width: 40px;
+	height: 40px;
+	bottom: 20px;
+	left: 60px;
+}
+
+.circle {
+	position: absolute;
+	border-radius: 50%;
+	background: white;
+	animation: ripple 15s infinite;
+	box-shadow: 0px 0px 1px 0px #508fb9;
+}
+
+.small {
+	width: 200px;
+	height: 200px;
+	left: -100px;
+	bottom: -100px;
+}
+
+.medium {
+	width: 400px;
+	height: 400px;
+	left: -200px;
+	bottom: -200px;
+}
+
+.large {
+	width: 600px;
+	height: 600px;
+	left: -300px;
+	bottom: -300px;
+}
+
+.xlarge {
+	width: 800px;
+	height: 800px;
+	left: -400px;
+	bottom: -400px;
+}
+
+.xxlarge {
+	width: 1000px;
+	height: 1000px;
+	left: -500px;
+	bottom: -500px;
+}
+
+.shade1 {
+	opacity: 0.2;
+}
+.shade2 {
+	opacity: 0.5;
+}
+
+.shade3 {
+	opacity: 0.7;
+}
+
+.shade4 {
+	opacity: 0.8;
+}
+
+.shade5 {
+	opacity: 0.9;
+}
+
+@keyframes ripple {
+	0% {
+		transform: scale(0.8);
+	}
+
+	50% {
+		transform: scale(1.2);
+	}
+
+	100% {
+		transform: scale(0.8);
+	}
+}
